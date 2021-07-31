@@ -1,0 +1,109 @@
+/* Variables de color */
+$bordo:#560A04;
+$crema:#fff6e1;
+$negro:black;
+$blanco1:rgba(255, 255, 255, 0.76);
+$blanco2:rgb(255, 255, 255);
+
+/* Color de fondo */
+.body__fondo--color{
+background-color: $crema;
+}
+
+/* Color de nav */
+.nav__fondo--color{
+    background-color: $bordo !important; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);
+
+    .nav__items--color {color:$blanco1 !important;
+
+    &:hover{color:$blanco2 !important;
+    }
+}
+}
+
+/* Color de titulos */
+.bienvenida__titulo--color{color: $negro;} 
+
+.bienvenida__texto--color{@extend .bienvenida__titulo--color;}
+
+.informacion__titulo--color{@extend .bienvenida__titulo--color;}
+
+.informacion__texto--color{@extend .bienvenida__titulo--color;}
+
+.infoArtistas__titulo--color{@extend .bienvenida__titulo--color;}
+
+.infoArtista__titulo--color {@extend .bienvenida__titulo--color;}
+
+.contenido__titulo--color{@extend .bienvenida__titulo--color;}
+
+.infoContacto__titulo--color{@extend .bienvenida__titulo--color;}
+
+.infoContacto__texto--color{@extend .bienvenida__titulo--color;}
+    
+/* Color de footer */
+.footer__fondo--color
+   {background-color: $bordo !important; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);
+
+    .footer__texto--color{color: $blanco2;
+
+        .footer__copy--color{color:$blanco1;
+    }
+    }
+}
+
+/* Color de logos */
+.footer__logos--color{opacity: 80%;
+
+&:hover{opacity: 100%;;
+}
+}
+
+/* Color de texto Artistas */
+.infoArtistas__contenedor--color{
+    background-color: $crema;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);
+    color: $negro;
+}
+
+/* Color card galeria */
+.galeria__card--color{
+    @extend .infoArtistas__contenedor--color;
+}
+
+/* Color de card resaltada */
+.card__contenedor--colorEspecial{
+        background-color: $bordo !important; 
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Color de botones contacto */
+.infoContacto__botones--color{
+    @extend .nav__fondo--color;
+}
+
+.infoContacto__botones--color:hover{background-color: #8b251e !important;}
+
+/* Modificacion en el scroll */
+body::-webkit-scrollbar{width: 12px; background-color: #999999;}
+body::-webkit-scrollbar-thumb{ background-color:#560A04; border-radius: 5px;}
+
+/* Error 404 */
+
+.errorInformacion__titulo--color{
+    color: $bordo;
+}
+.errorInformacion__subtitulo--color{
+    @extend .errorInformacion__titulo--color;
+}
+
+.errorInformacion__parrafo--color{
+    @extend .bienvenida__titulo--color;
+}
+
+.errorInformacion__boton--color{
+    @extend .nav__fondo--color;
+    color: $blanco2;
+    border-radius: 5px;
+}

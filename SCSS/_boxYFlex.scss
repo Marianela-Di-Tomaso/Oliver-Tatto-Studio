@@ -1,0 +1,248 @@
+@import "colores";
+
+/* Ancho del body */
+.background{width: 100%;}
+
+/* Sin padding en todo el html */
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {padding-left: 0px; padding-right: 0px;}
+
+/* Barra de navegacion */
+.nav__barraDeNavegacion--boxYFlex{
+    justify-content: flex-end;
+    .nav_items--boxYFlex{margin:9px;
+    }
+}
+
+/* Logo de la barra de navegacion */
+.nav__logo--boxYFlex{margin-left: 10px;}
+
+/* mixin */
+@mixin espacios ($mar , $pad){
+    margin: $mar;
+    padding: $pad;
+}
+ /* map-get */
+$estilos2:(
+    displayflex: flex,
+    centrado: center,
+    columna: column,
+); 
+
+/* Texto del index */
+.bienvenida__contenedor--boxYFlex{
+    padding-top: 40px; 
+    padding-bottom: 40px;
+    display: map-get($estilos2, $key:displayflex);
+    justify-content: map-get($estilos2, $key:centrado);
+    margin-top:20px;
+    margin-bottom:20px;
+    @media only screen and (min-width:0px) and (max-width:400px){
+        display: map-get($estilos2, $key:displayflex);
+        flex-direction: map-get($estilos2, $key:columna);
+        margin-top: 30px;
+        align-items: map-get($estilos2 , $key:centrado);
+    }
+    @media only screen and (min-width:401px) and (max-width:960px){
+        display: map-get($estilos2 , $key:displayflex);
+        flex-direction:  map-get($estilos2, $key:columna);
+        margin-top: 20px;
+        align-items: map-get($estilos2, $key:centrado);
+    }
+    .bienvenida__titulo--boxYFlex{
+        @include espacios(7px, 1px);
+        width: 450px;
+        @media only screen and (min-width:0px) and (max-width:400px){
+            margin: 2px;
+            width: auto;
+        }
+        @media only screen and (min-width:401px) and (max-width:960px){
+            @include espacios(12px 4px, 4px);
+            width: auto;
+        }
+    }
+}
+
+.bienvenida__texto--boxYFlex{
+    @include espacios(11px, 5px);
+    width: 450px;
+    @media only screen and (min-width:0px) and (max-width:400px){
+        @include espacios(5px, 5px);
+        width: auto;
+    }
+    @media only screen and (min-width:401px) and (max-width:960px){
+        @include espacios(5px, 5px);
+        width: auto;
+    }
+}
+
+/* Footer texto y logos */
+.footer__texto--boxYFlex{
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.footer__copy--boxYFlex{
+    padding-bottom: -50px;
+    margin-top: 90px;
+    display: map-get($estilos2 , $key:displayflex);
+    justify-content: map-get($estilos2 , $key:centrado);
+    
+}
+.footer__logo--boxYFlex{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+.footer__redes{
+    display: map-get($estilos2 , $key:displayflex);
+    margin-top: 10px;
+    justify-content: flex-end;
+    margin-right: 20px;
+    list-style: none;
+    margin-bottom: 0px;
+    .footer__logos--boxYFlex{
+        padding: 8px;
+    }
+    @media only screen and (min-width:0px) and (max-width:960px){
+        justify-content: center;
+        margin-top: 10px;}
+}
+
+/* Texto de estudio */
+.informacion__contenedor--boxYFlex{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 95%;
+    .informacion__titulo--boxYFlex{
+        margin: 20px 2px;
+        padding:5px;
+    }
+    .informacion__imagen--boxYFlex{
+        padding-bottom: 20px;
+        margin-right: 50px;
+
+    }
+    .informacion__texto--boxYFlex{
+        padding-right:10px;
+        padding-left: 25px;
+        padding-top: 10px;
+       
+    }
+}
+
+/* Texto de artistas y contenedor */
+.infoArtistas__titulo--boxYFlex{
+    margin: 20px 2px;
+    padding:5px;
+}
+
+.infoArtistas__contenedor--boxYFlex{
+    @include espacios(10px, 10px);
+    .infoArtista__card--boxYFlex{
+        height: 390px;
+        @media only screen and (min-width:401px) and (max-width:960px){
+            height: 330px;
+        }
+        @media only screen and (min-width:992px) and (max-width:1100px){
+            height: 566px;
+        }
+        @media only screen and (min-width:1101px) and (max-width:1300px){
+            height: 500px;
+        }
+    }
+}
+
+/* Galeria contenedor y cards*/
+.galeria__contenedor--boxYFlex{
+    @include espacios(2px, 2px);
+    
+}
+
+.contenido__titulo--boxYFlex{
+    margin: 20px 2px;
+    padding:5px;
+    padding-left: 21px;
+}
+
+.infoContacto__contenedor--boxYFlex{
+    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 2px;
+    padding:5px;
+}
+.infoContacto__contenedor2--boxYFlex{
+    margin-bottom: 0px;
+    margin-top: 6px;
+    margin-left: 10px;
+    margin-right: 2px;
+    padding:5px;
+
+}
+
+/* Concatctos input, boton, form y mapa */
+.infoContacto__input--boxYFlex{
+    border: 2px solid $bordo;
+    border-radius: 5px;
+}
+
+.infoContacto__boton1--boxyFlex{
+    margin:10px;
+}
+.infoContacto__boton2--boxyFlex{
+   @extend .infoContacto__boton1--boxyFlex;
+}
+
+.infoContacto__form-boxYFlex{
+    margin-right: 50px !important;
+
+}
+.infoContacto__texto--boxYFlex{
+    @extend .infoContacto__form-boxYFlex;
+}
+
+.infoContacto__botones--boxYFlex{ margin: 10px;
+    @media only screen and (min-width:401px) and (max-width:960px){
+     margin-left: 50px;   
+     margin-right: 50px;   
+    }}
+
+.infoContacto__mapa-boxYFlex
+{margin-left: 90px; 
+margin-top: 20px; 
+margin-bottom: 20px;
+width: 470px;
+@media only screen and (min-width:0px) and (max-width:400px){
+    width: 230px; height: 300px;  @include espacios(5px, 2px);
+}
+@media only screen and (min-width:401px) and (max-width:960px){
+    width: 330px; height: 300px;  @include espacios(20px, 2px);
+}
+@media only screen and (min-width:961px) and (max-width:1100px){
+    width: 430px; height: 300px;   @include espacios(5px, 2px);
+}
+}
+
+/* Error 404 */
+.error__contenedor--boxYFlex{
+    display: flex;
+    justify-content: center;
+    .error__imagen--boxYFlex{
+       margin-bottom: 20px;
+       margin-top: 40px;
+    }
+}
+
+.errorInformacion__contenedor--boxYFlex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.errorInformacion__contenedorBoton--boxYFlex{
+    margin-left: -20px;
+}

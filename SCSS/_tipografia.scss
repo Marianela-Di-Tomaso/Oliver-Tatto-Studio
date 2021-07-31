@@ -1,0 +1,179 @@
+/* Variables de tipografia */
+$fontFamilyRoboto: 'Roboto', sans-serif;
+$fontFamilyAnton:  'Anton', sans-serif;
+
+/* Tipografia para todas las p, h1 y h5 */
+p{font-family: $fontFamilyRoboto;}
+h1 , h5 , h2{font-family: $fontFamilyAnton;}
+h5{letter-spacing: 2px;}
+
+@mixin font($fontS, $lineH) {
+    font-size: $fontS;
+    line-height: $lineH;
+}
+/* map get */
+$estilos :(
+    centro: center,
+    mayusc: uppercase,
+    izq: left,
+);
+
+/* Items de la nav */
+.nav__items--tipografia{
+    font-family: $fontFamilyRoboto;
+    font-size: 18px;
+    margin: 9px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Texto index */
+.bienvenida__titulo--tipografia{
+    letter-spacing: 6px;
+    text-align: right;
+    @include font (50px,68px);
+    @media only screen and (min-width:0px) and (max-width:400px){
+        @include font (30px,46px);
+        text-align: map-get($estilos,centro);
+        letter-spacing: 3px;
+    }
+    @media only screen and (min-width:401px) and (max-width:960px){
+        @include font (38px,44px);
+        text-align: map-get($estilos, centro);
+        letter-spacing: 4px;      
+    }
+}
+
+.bienvenida__texto--tipografia{
+    text-align: map-get($estilos, izq);
+    @include font (20px,31.5px);
+    span{
+        font-weight: bold;
+        text-transform: map-get($estilos, mayusc);
+    }
+    @media only screen and (min-width:0px) and (max-width:400px){
+        @include font (18px,29px);
+        text-align: map-get($estilos, centro);       
+    }
+    @media only screen and (min-width:401px) and (max-width:960px){
+        text-align: center;
+        @include font (21px,29px);
+    }
+}
+
+/* Footer texto y logos */
+.footer__texto--tipografia{
+    font-family: $fontFamilyRoboto;
+    font-weight: bold !important;
+    font-size: 16px;
+    text-transform: map-get($estilos, mayusc);
+    text-align: map-get($estilos, izq);
+    @media only screen and (min-width:0px) and (max-width:960px){
+        text-align: center;}
+}
+
+.footer__copy--tipografia{
+    font-size: 15px;
+    text-align: map-get($estilos, center);
+    font-weight:lighter;
+}
+
+.footer_logos--tipografia{
+    list-style-type: none;
+}
+
+/* Informacion de estudio */
+.informacion__titulo--tipografia{
+    text-align: map-get($estilos, izq);
+    font-size: 30px;
+    letter-spacing: 3px;
+    @media only screen and (min-width:0px) and (max-width:400px){
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin: 10px 2px;
+        padding:3px;
+        text-align: center;
+    }
+    @media only screen and (min-width:401px) and (max-width:960px){
+        text-align: center;}
+}
+
+/* Informacion de artistas */
+.infoArtistas__titulo--tipografia {
+    @extend .informacion__titulo--tipografia;
+}
+
+.contenido__titulo--tipografia {
+    @extend .informacion__titulo--tipografia;
+}
+
+.informacion__texto--tipografia{
+    @include font (21px,31px);
+    text-align: map-get($estilos, izq);
+    @media only screen and (min-width:0px) and (max-width:400px){
+        @include font (18px,25px);
+    }
+}
+ /* Informacion de artistas */
+.infoArtista__titulo--tipografia{
+    font-size: 21px;
+    letter-spacing: 2px;
+}
+
+.contenido_card--tipografia{
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+/* Texto contacto */
+.infoContacto__titulo--tipografia {
+    @extend .informacion__titulo--tipografia;
+}
+.infoContacto__texto--tipografia{
+    @include font (19px,27px);
+    text-align: map-get($estilos, izq);
+}
+
+.infoContacto__label--tipografia{
+    @extend .infoContacto__texto--tipografia;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Error 404 */
+.errorInformacion__titulo--tipografia{
+    font-family: $fontFamilyAnton;
+    font-size: 55px;
+    letter-spacing: 4px;
+    text-align: center;
+    @media only screen and (min-width:0px) and (max-width:400px){
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+    @media only screen and (min-width:401px) and (max-width:960px){
+        font-size: 45px;
+        letter-spacing: 3px;}
+
+}
+
+.errorInformacion__subtitulo--tipografia{
+    font-family: $fontFamilyAnton;
+    font-size: 40px;
+    letter-spacing: 13px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.errorInformacion__parrafo--tipografia{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.errorInformacion__boton--tipografia{
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+}

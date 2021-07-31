@@ -1,0 +1,27 @@
+/* Variable de efectos */
+$ampliar: scale(1.04);
+
+/* Efecto en logo nav */
+.nav__logo--efectos:hover{
+    transform:$ampliar;
+}
+.nav__logo--efectosIndex{
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+/* Efecto en items de la nav */
+.nav__items--efecto:hover{transform:$ampliar;}
+
+/* Efectos en logos del footer */
+.footer__logos--efectos:hover{@extend .nav__items--efecto;}
+
+
