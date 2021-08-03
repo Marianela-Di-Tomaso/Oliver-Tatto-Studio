@@ -30,12 +30,12 @@ $estilos2:(
 
 /* Texto del index */
 .bienvenida__contenedor--boxYFlex{
-    padding-top: 40px; 
-    padding-bottom: 40px;
+    padding-top: 70px; 
+    padding-bottom: 70px;
     display: map-get($estilos2, $key:displayflex);
     justify-content: map-get($estilos2, $key:centrado);
-    margin-top:20px;
-    margin-bottom:20px;
+    margin-top:30px;
+    margin-bottom:30px;
     @media only screen and (min-width:0px) and (max-width:400px){
         display: map-get($estilos2, $key:displayflex);
         flex-direction: map-get($estilos2, $key:columna);
@@ -62,6 +62,14 @@ $estilos2:(
     }
 }
 
+.preguntas__contendor--boxYFlex{
+    padding-top: 15px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    display: map-get($estilos2, $key:displayflex);
+    justify-content: map-get($estilos2, $key:centrado);
+}
+
 .bienvenida__texto--boxYFlex{
     @include espacios(11px, 5px);
     width: 450px;
@@ -73,6 +81,17 @@ $estilos2:(
         @include espacios(5px, 5px);
         width: auto;
     }
+}
+ hr{
+     width: 900px;
+     height: 3px;
+     
+ }
+.preguntas_card--boxYFlex{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
 }
 
 /* Footer texto y logos */

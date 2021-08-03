@@ -1,5 +1,5 @@
 /* Variable de efectos */
-$ampliar: scale(1.04);
+$ampliar: scale(1.02);
 
 /* Efecto en logo nav */
 .nav__logo--efectos:hover{
@@ -17,6 +17,9 @@ $ampliar: scale(1.04);
       opacity: 1;
     }
 }
+
+/* Efecto preguntas index */
+.preguntas_card--efectos:hover{transform: $ampliar; transition: 0.4s;}
 
 /* Efecto en items de la nav */
 .nav__items--efecto:hover{transform:$ampliar;}

@@ -13,7 +13,7 @@ background-color: $crema;
 /* Color de nav */
 .nav__fondo--color{
     background-color: $bordo !important; 
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2) !important;
 
     .nav__items--color {color:$blanco1 !important;
 
@@ -22,6 +22,9 @@ background-color: $crema;
 }
 }
 
+hr{
+    background-color: $bordo;
+}
 .barra_progreso--colores{
     background-color: $bordo;
 }
@@ -44,6 +47,8 @@ background-color: $crema;
 .infoContacto__titulo--color{@extend .bienvenida__titulo--color;}
 
 .infoContacto__texto--color{@extend .bienvenida__titulo--color;}
+
+.preguntas__titulo--color{@extend .bienvenida__titulo--color;}
     
 /* Color de footer */
 .footer__fondo--color
@@ -74,6 +79,11 @@ background-color: $crema;
 /* Color card galeria */
 .galeria__card--color{
     @extend .infoArtistas__contenedor--color;
+}
+
+/* Color card preguntas index */
+.preguntas_card--color{
+    background-color: $crema;
 }
 
 /* Color de card resaltada */
