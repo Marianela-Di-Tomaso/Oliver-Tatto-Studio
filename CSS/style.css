@@ -13,6 +13,9 @@
     .nav__fondo--color .nav__items--color:hover, .infoContacto__botones--color .nav__items--color:hover, .errorInformacion__boton--color .nav__items--color:hover {
       color: white !important; }
 
+.barra_progreso--colores {
+  background-color: #560A04; }
+
 /* Color de titulos */
 .bienvenida__titulo--color, .bienvenida__texto--color, .informacion__titulo--color, .informacion__texto--color, .infoArtistas__titulo--color, .infoArtista__titulo--color, .contenido__titulo--color, .infoContacto__titulo--color, .infoContacto__texto--color, .errorInformacion__parrafo--color {
   color: black; }
@@ -244,6 +247,9 @@ h5 {
     .nav__fondo--color .nav__items--color:hover, .infoContacto__botones--color .nav__items--color:hover, .errorInformacion__boton--color .nav__items--color:hover {
       color: white !important; }
 
+.barra_progreso--colores {
+  background-color: #560A04; }
+
 /* Color de titulos */
 .bienvenida__titulo--color, .bienvenida__texto--color, .informacion__titulo--color, .informacion__texto--color, .infoArtistas__titulo--color, .infoArtista__titulo--color, .contenido__titulo--color, .infoContacto__titulo--color, .infoContacto__texto--color, .errorInformacion__parrafo--color {
   color: black; }
@@ -417,22 +423,26 @@ body::-webkit-scrollbar-thumb {
 
 /* Texto de artistas y contenedor */
 .infoArtistas__titulo--boxYFlex {
+  margin: 20px 2px;
+  padding: 5px; }
+
+.infoArtistas__cardtitulo--boxYFlex {
   margin-bottom: 20px; }
 
 .infoArtistas__contenedor--boxYFlex {
   margin: 10px;
   padding: 10px; }
   .infoArtistas__contenedor--boxYFlex .infoArtista__card--boxYFlex {
-    height: 435px; }
+    height: 525px; }
     @media only screen and (min-width: 401px) and (max-width: 960px) {
       .infoArtistas__contenedor--boxYFlex .infoArtista__card--boxYFlex {
-        height: 340px; } }
+        height: 420px; } }
     @media only screen and (min-width: 992px) and (max-width: 1100px) {
       .infoArtistas__contenedor--boxYFlex .infoArtista__card--boxYFlex {
-        height: 576px; } }
+        height: 776px; } }
     @media only screen and (min-width: 1101px) and (max-width: 1300px) {
       .infoArtistas__contenedor--boxYFlex .infoArtista__card--boxYFlex {
-        height: 520px; } }
+        height: 680px; } }
 
 .barra__progreso--boxYFlex {
   margin-top: 10px;
