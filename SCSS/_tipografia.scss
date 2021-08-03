@@ -116,13 +116,25 @@ $estilos :(
 }
  /* Informacion de artistas */
 .infoArtista__titulo--tipografia{
-    font-size: 21px;
+    font-size: 23px;
     letter-spacing: 2px;
 }
 
-.contenido_card--tipografia{
-    letter-spacing: 1px;
-    font-size: 22px;
+.infoArtista__texto--tipografia{
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+ .tamaño{
+     font-size: 16px;
+     font-family: $fontFamilyRoboto;
+     font-weight: 700;
+ }
+.barra__titulo--tipografia{
+    font-family: $fontFamilyRoboto;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 /* Texto contacto */

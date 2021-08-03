@@ -135,24 +135,30 @@ $estilos2:(
 
 /* Texto de artistas y contenedor */
 .infoArtistas__titulo--boxYFlex{
-    margin: 20px 2px;
-    padding:5px;
+    margin-bottom: 20px;
+    
 }
 
 .infoArtistas__contenedor--boxYFlex{
     @include espacios(10px, 10px);
     .infoArtista__card--boxYFlex{
-        height: 390px;
+        height: 435px;
         @media only screen and (min-width:401px) and (max-width:960px){
-            height: 330px;
+            height: 340px;
         }
         @media only screen and (min-width:992px) and (max-width:1100px){
-            height: 566px;
+            height: 576px;
         }
         @media only screen and (min-width:1101px) and (max-width:1300px){
-            height: 500px;
+            height: 520px;
         }
     }
+}
+
+.barra__progreso--boxYFlex{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
 }
 
 /* Galeria contenedor y cards*/

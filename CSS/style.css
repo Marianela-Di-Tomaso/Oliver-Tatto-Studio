@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variables de color */
 /* Color de fondo */
 .body__fondo--color {
@@ -167,12 +168,23 @@ h5 {
 
 /* Informacion de artistas */
 .infoArtista__titulo--tipografia {
-  font-size: 21px;
+  font-size: 23px;
   letter-spacing: 2px; }
 
-.contenido_card--tipografia {
-  letter-spacing: 1px;
-  font-size: 22px; }
+.infoArtista__texto--tipografia {
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.tamaño {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; }
+
+.barra__titulo--tipografia {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700; }
 
 /* Texto contacto */
 .infoContacto__texto--tipografia, .infoContacto__label--tipografia {
@@ -405,23 +417,26 @@ body::-webkit-scrollbar-thumb {
 
 /* Texto de artistas y contenedor */
 .infoArtistas__titulo--boxYFlex {
-  margin: 20px 2px;
-  padding: 5px; }
+  margin-bottom: 20px; }
 
 .infoArtistas__contenedor--boxYFlex {
   margin: 10px;
   padding: 10px; }
   .infoArtistas__contenedor--boxYFlex .infoArtista__card--boxYFlex {
-    height: 390px; }
+    height: 435px; }
     @media only screen and (min-width: 401px) and (max-width: 960px) {
       .infoArtistas__contenedor--boxYFlex .infoArtista__card--boxYFlex {
-        height: 330px; } }
+        height: 340px; } }
     @media only screen and (min-width: 992px) and (max-width: 1100px) {
       .infoArtistas__contenedor--boxYFlex .infoArtista__card--boxYFlex {
-        height: 566px; } }
+        height: 576px; } }
     @media only screen and (min-width: 1101px) and (max-width: 1300px) {
       .infoArtistas__contenedor--boxYFlex .infoArtista__card--boxYFlex {
-        height: 500px; } }
+        height: 520px; } }
+
+.barra__progreso--boxYFlex {
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 /* Galeria contenedor y cards*/
 .galeria__contenedor--boxYFlex {
