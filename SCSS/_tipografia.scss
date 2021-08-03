@@ -64,6 +64,7 @@ $estilos :(
 .preguntas__titulo--tipografia{
     font-size: 35px;
     letter-spacing: 3px; 
+    text-align: center;
  
 }
 
@@ -133,11 +134,7 @@ $estilos :(
     margin-top: 20px;
     
 }
- .tamaño{
-     font-size: 16px;
-     font-family: $fontFamilyRoboto;
-     font-weight: 700;
- }
+
 .barra__titulo--tipografia{
     font-family: $fontFamilyRoboto;
     font-size: 16px;
