@@ -31,6 +31,12 @@ hr {
     .footer__fondo--color .footer__texto--color .footer__copy--color {
       color: rgba(255, 255, 255, 0.76); }
 
+.navbar-light .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+
+.navbar-light .navbar-toggler {
+  border: solid #ffffff 2px; }
+
 /* Color de logos */
 .footer__logos--color {
   opacity: 80%; }
@@ -92,7 +98,8 @@ h5 {
   font-size: 18px;
   margin: 9px;
   font-weight: 700;
-  letter-spacing: 0.5px; }
+  letter-spacing: 0.5px;
+  text-align: center; }
 
 /* Texto index */
 .bienvenida__titulo--tipografia {
@@ -272,6 +279,12 @@ hr {
     .footer__fondo--color .footer__texto--color .footer__copy--color {
       color: rgba(255, 255, 255, 0.76); }
 
+.navbar-light .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+
+.navbar-light .navbar-toggler {
+  border: solid #ffffff 2px; }
+
 /* Color de logos */
 .footer__logos--color {
   opacity: 80%; }
@@ -446,16 +459,31 @@ hr {
   padding-left: 20px;
   padding-right: 20px;
   width: 95%; }
+  @media only screen and (min-width: 0px) and (max-width: 960px) {
+    .informacion__contenedor--boxYFlex {
+      width: 100%;
+      padding-right: 0px; } }
   .informacion__contenedor--boxYFlex .informacion__titulo--boxYFlex {
     margin: 20px 2px;
     padding: 5px; }
   .informacion__contenedor--boxYFlex .informacion__imagen--boxYFlex {
     padding-bottom: 20px;
     margin-right: 50px; }
+    @media only screen and (min-width: 0px) and (max-width: 730px) {
+      .informacion__contenedor--boxYFlex .informacion__imagen--boxYFlex {
+        margin-right: 0px;
+        margin-left: 5px; } }
+    @media only screen and (min-width: 730px) and (max-width: 962px) {
+      .informacion__contenedor--boxYFlex .informacion__imagen--boxYFlex {
+        margin-left: 60px;
+        padding-left: 40px; } }
   .informacion__contenedor--boxYFlex .informacion__texto--boxYFlex {
     padding-right: 10px;
     padding-left: 25px;
     padding-top: 10px; }
+    @media only screen and (min-width: 0px) and (max-width: 960px) {
+      .informacion__contenedor--boxYFlex .informacion__texto--boxYFlex {
+        padding: 5px; } }
 
 /* Texto de artistas y contenedor */
 .infoArtistas__titulo--boxYFlex {
