@@ -5,9 +5,15 @@ $negro:black;
 $blanco1:rgba(255, 255, 255, 0.76);
 $blanco2:rgb(255, 255, 255);
 
+
 /* Color de fondo */
 .body__fondo--color{
 background-color: $crema;
+}
+
+/* Fondo para contactos */
+.body__fondo--colorEspecial{
+    background-color: $bordo;
 }
 
 /* Color de nav */
@@ -44,23 +50,25 @@ hr{
 
 .contenido__titulo--color{@extend .bienvenida__titulo--color;}
 
-.infoContacto__titulo--color{@extend .bienvenida__titulo--color;}
+.infoContacto__titulo--color{color: $blanco2;}
 
-.infoContacto__texto--color{@extend .bienvenida__titulo--color;}
+.infoContacto__texto--color{@extend .infoContacto__titulo--color;}
 
 .preguntas__titulo--color{@extend .bienvenida__titulo--color;}
     
 /* Color de footer */
 .footer__fondo--color
    {background-color: $bordo !important; 
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);}
 
-    .footer__texto--color{color: $blanco2;
+    .footer__titulo1--color{color: $blanco1;}
 
-        .footer__copy--color{color:$blanco1;
-    }
-    }
-}
+    .footer__titulo2--color{color: $blanco1;}
+
+    .footer__texto--color{color: $blanco2;}
+
+    .footer__copy--color{color:$blanco1;}
+
 
 .navbar-light .navbar-toggler  .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -105,6 +113,13 @@ hr{
     @extend .nav__fondo--color;
 }
 
+/* Contenedor contacto */
+
+.infoContacto__fomrulario--color{
+    background-color: #721710a9;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
 .infoContacto__botones--color:hover{background-color: #8b251e !important;}
 
 /* Modificacion en el scroll */
@@ -129,3 +144,5 @@ body::-webkit-scrollbar-thumb{ background-color:#560A04; border-radius: 5px;}
     color: $blanco2;
     border-radius: 5px;
 }
+
+.errorInformacion__boton--color:hover{background-color: #8b251e !important;}

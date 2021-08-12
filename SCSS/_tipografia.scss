@@ -62,6 +62,11 @@ $estilos :(
     }
 }
 
+.musica__titulo--tipografia{
+    font-family: $fontFamilyRoboto;
+    font-size: 21px;
+    font-weight: bold;
+}
 .preguntas__titulo--tipografia{
     font-size: 35px;
     letter-spacing: 3px; 
@@ -83,10 +88,27 @@ $estilos :(
 
 .footer__copy--tipografia{
     font-size: 15px;
-    text-align: map-get($estilos, center);
+    text-align: map-get($estilos, centro);
     font-weight:lighter;
 }
 
+.footer__titulo1--tipografia{
+    @extend .footer__texto--tipografia;
+    font-weight: normal !important;
+    letter-spacing: 1.5px;
+    text-transform: none;
+}
+
+.footer__titulo2--tipografia{
+    @extend .footer__texto--tipografia;
+    font-weight: normal !important;
+    letter-spacing: 1.5px;
+    text-transform: none;
+    text-align: right;
+    @media only screen and (min-width:0px) and (max-width:960px){
+        text-align: center;}
+
+}
 .footer_logos--tipografia{
     list-style-type: none;
 }
@@ -145,16 +167,19 @@ $estilos :(
 /* Texto contacto */
 .infoContacto__titulo--tipografia {
     @extend .informacion__titulo--tipografia;
+    text-align: center;
 }
 .infoContacto__texto--tipografia{
     @include font (19px,27px);
-    text-align: map-get($estilos, izq);
+    text-align: map-get($estilos, centro);
 }
 
 .infoContacto__label--tipografia{
     @extend .infoContacto__texto--tipografia;
+    text-align: left;
     font-size: 18px;
     font-weight: bold;
+    color: white;
 }
 
 /* Error 404 */

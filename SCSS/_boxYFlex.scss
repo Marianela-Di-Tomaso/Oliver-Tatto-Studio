@@ -34,8 +34,8 @@ $estilos2:(
     padding-bottom: 70px;
     display: map-get($estilos2, $key:displayflex);
     justify-content: map-get($estilos2, $key:centrado);
-    margin-top:30px;
-    margin-bottom:30px;
+    margin-top:60px;
+    margin-bottom:15px;
     @media only screen and (min-width:0px) and (max-width:400px){
         display: map-get($estilos2, $key:displayflex);
         flex-direction: map-get($estilos2, $key:columna);
@@ -60,6 +60,13 @@ $estilos2:(
             width: auto;
         }
     }
+}
+
+.bienvenida__musica--boxYFlex{
+    display: map-get($estilos2, $key:displayflex);
+    align-items: map-get($estilos2, $key:centrado);
+    flex-direction: map-get($estilos2, $key:columna);
+    margin-bottom: 50px;
 }
 
 .preguntas__contendor--boxYFlex{
@@ -104,7 +111,22 @@ $estilos2:(
 .footer__texto--boxYFlex{
     margin-left: 20px;
     margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.footer__titulo1--boxYFlex{
+    @extend .footer__texto--boxYFlex;
+    margin-bottom: 10px;
     margin-top: 20px;
+}
+
+.footer__titulo2--boxYFlex{
+    @extend .footer__texto--boxYFlex;
+    margin-right: 38px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    @media only screen and (min-width:0px) and (max-width:960px){
+        margin-right: 0px;}
 }
 
 .footer__copy--boxYFlex{
@@ -118,7 +140,7 @@ $estilos2:(
     height: 100px;
     width: 100px;
     margin-bottom: 25px;
-    margin-left: 30px;
+    margin-left: 28px;
     margin-top: 0px;
 }
 .footer__redes{
@@ -194,10 +216,10 @@ $estilos2:(
     .infoArtista__card--boxYFlex{
         height: 525px;
         @media only screen and (min-width:401px) and (max-width:960px){
-            height: 420px;
+            height: 480px;
         }
         @media only screen and (min-width:992px) and (max-width:1100px){
-            height: 776px;
+            height: 790px;
         }
         @media only screen and (min-width:1101px) and (max-width:1300px){
             height: 680px;
@@ -215,33 +237,56 @@ $estilos2:(
     @include espacios(2px, 2px);
     
 }
-
 .contenido__titulo--boxYFlex{
-    margin: 20px 2px;
-    padding:5px;
-    padding-left: 21px;
-}
-
-.infoContacto__contenedor--boxYFlex{
-    margin-bottom: 5px;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 2px;
-    padding:5px;
-}
-.infoContacto__contenedor2--boxYFlex{
-    margin-bottom: 0px;
-    margin-top: 6px;
-    margin-left: 10px;
-    margin-right: 2px;
+    margin: 20px 5px;
     padding:5px;
 
 }
 
 /* Concatctos input, boton, form y mapa */
+
+.contacto__contendor--boxYFlex{
+    width: 800px;
+    @media only screen and (min-width:0px) and (max-width:400px){
+        width: 300px;
+    }
+    @media only screen and (min-width:401px) and (max-width:760px){
+        width: 320px; 
+    }
+    @media only screen and (min-width:761px) and (max-width:960px){
+        width: 450px; 
+    }
+    @media only screen and (min-width:961px) and (max-width:1100px){
+        width: 730px;
+    }
+}
+
+
+.infoContacto__contenedor--boxYFlex{
+    margin-bottom: 30px;
+    margin-top: 40px;
+    padding:5px;
+}
+
+.infoContacto__fomrulario--boxYFlex{
+    margin-bottom: 20px;
+}
 .infoContacto__input--boxYFlex{
-    border: 2px solid $bordo;
+    border: 1px solid $negro;
     border-radius: 5px;
+    width: 740px;
+    @media only screen and (min-width:0px) and (max-width:400px){
+        width: 250px;
+    }
+    @media only screen and (min-width:401px) and (max-width:760px){
+        width: 270px; 
+    }
+    @media only screen and (min-width:761px) and (max-width:961px){
+        width: 380px; 
+    }
+    @media only screen and (min-width:961px) and (max-width:1100px){
+        width: 630px; 
+    }
 }
 
 .infoContacto__boton1--boxyFlex{
@@ -252,33 +297,37 @@ $estilos2:(
 }
 
 .infoContacto__form-boxYFlex{
-    margin-right: 50px !important;
+    margin: 20px;
 
 }
 .infoContacto__texto--boxYFlex{
     @extend .infoContacto__form-boxYFlex;
 }
 
-.infoContacto__botones--boxYFlex{ margin: 10px;
+.infoContacto__botones--boxYFlex{ 
     @media only screen and (min-width:401px) and (max-width:960px){
      margin-left: 50px;   
      margin-right: 50px;   
     }}
 
-.infoContacto__mapa-boxYFlex
-{margin-left: 90px; 
-margin-top: 20px; 
-margin-bottom: 20px;
-width: 470px;
-@media only screen and (min-width:0px) and (max-width:400px){
-    width: 230px; height: 300px;  @include espacios(5px, 2px);
+.infoContacto__mapaContenedor-boxYFlex
+{   display: flex;
+    justify-content: center;
 }
-@media only screen and (min-width:401px) and (max-width:960px){
-    width: 330px; height: 300px;  @include espacios(20px, 2px);
-}
-@media only screen and (min-width:961px) and (max-width:1100px){
-    width: 430px; height: 300px;   @include espacios(5px, 2px);
-}
+
+.infoContacto__mapa-boxYFlex{
+    align-items: center;
+    width: 480px;
+    margin:20px;
+    @media only screen and (min-width:0px) and (max-width:400px){
+        width: 230px; height: 300px;  @include espacios(5px, 2px);
+    }
+    @media only screen and (min-width:401px) and (max-width:960px){
+        width: 330px; height: 300px;  @include espacios(20px, 2px);
+    }
+    @media only screen and (min-width:961px) and (max-width:1100px){
+        width: 430px; height: 300px;   @include espacios(5px, 2px);
+    }
 }
 
 /* Error 404 */

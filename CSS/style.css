@@ -3,6 +3,10 @@
 .body__fondo--color {
   background-color: #fff6e1; }
 
+/* Fondo para contactos */
+.body__fondo--colorEspecial {
+  background-color: #560A04; }
+
 /* Color de nav */
 .nav__fondo--color, .infoContacto__botones--color, .errorInformacion__boton--color {
   background-color: #560A04 !important;
@@ -19,17 +23,28 @@ hr {
   background-color: #560A04; }
 
 /* Color de titulos */
-.bienvenida__titulo--color, .bienvenida__texto--color, .informacion__titulo--color, .informacion__texto--color, .infoArtistas__titulo--color, .infoArtista__titulo--color, .contenido__titulo--color, .infoContacto__titulo--color, .infoContacto__texto--color, .preguntas__titulo--color, .errorInformacion__parrafo--color {
+.bienvenida__titulo--color, .bienvenida__texto--color, .informacion__titulo--color, .informacion__texto--color, .infoArtistas__titulo--color, .infoArtista__titulo--color, .contenido__titulo--color, .preguntas__titulo--color, .errorInformacion__parrafo--color {
   color: black; }
+
+.infoContacto__titulo--color, .infoContacto__texto--color {
+  color: white; }
 
 /* Color de footer */
 .footer__fondo--color {
   background-color: #560A04 !important;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2); }
-  .footer__fondo--color .footer__texto--color {
-    color: white; }
-    .footer__fondo--color .footer__texto--color .footer__copy--color {
-      color: rgba(255, 255, 255, 0.76); }
+
+.footer__titulo1--color {
+  color: rgba(255, 255, 255, 0.76); }
+
+.footer__titulo2--color {
+  color: rgba(255, 255, 255, 0.76); }
+
+.footer__texto--color {
+  color: white; }
+
+.footer__copy--color {
+  color: rgba(255, 255, 255, 0.76); }
 
 .navbar-light .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
@@ -60,6 +75,11 @@ hr {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2); }
 
 /* Color de botones contacto */
+/* Contenedor contacto */
+.infoContacto__fomrulario--color {
+  background-color: #721710a9;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2); }
+
 .infoContacto__botones--color:hover {
   background-color: #8b251e !important; }
 
@@ -79,6 +99,9 @@ body::-webkit-scrollbar-thumb {
 .errorInformacion__boton--color {
   color: white;
   border-radius: 5px; }
+
+.errorInformacion__boton--color:hover {
+  background-color: #8b251e !important; }
 
 /* Variables de tipografia */
 /* Tipografia para todas las p, h1 y h5 */
@@ -138,25 +161,45 @@ h5 {
       font-size: 21px;
       line-height: 29px; } }
 
+.musica__titulo--tipografia {
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  font-weight: bold; }
+
 .preguntas__titulo--tipografia {
   font-size: 35px;
   letter-spacing: 3px;
   text-align: center; }
 
 /* Footer texto y logos */
-.footer__texto--tipografia {
+.footer__texto--tipografia, .footer__titulo1--tipografia, .footer__titulo2--tipografia {
   font-family: "Roboto", sans-serif;
   font-weight: bold !important;
   font-size: 16px;
   text-transform: uppercase;
   text-align: left; }
   @media only screen and (min-width: 0px) and (max-width: 960px) {
-    .footer__texto--tipografia {
+    .footer__texto--tipografia, .footer__titulo1--tipografia, .footer__titulo2--tipografia {
       text-align: center; } }
 
 .footer__copy--tipografia {
   font-size: 15px;
+  text-align: center;
   font-weight: lighter; }
+
+.footer__titulo1--tipografia {
+  font-weight: normal !important;
+  letter-spacing: 1.5px;
+  text-transform: none; }
+
+.footer__titulo2--tipografia {
+  font-weight: normal !important;
+  letter-spacing: 1.5px;
+  text-transform: none;
+  text-align: right; }
+  @media only screen and (min-width: 0px) and (max-width: 960px) {
+    .footer__titulo2--tipografia {
+      text-align: center; } }
 
 .footer_logos--tipografia {
   list-style-type: none; }
@@ -203,14 +246,19 @@ h5 {
   font-weight: 700; }
 
 /* Texto contacto */
+.infoContacto__titulo--tipografia {
+  text-align: center; }
+
 .infoContacto__texto--tipografia, .infoContacto__label--tipografia {
   font-size: 19px;
   line-height: 27px;
-  text-align: left; }
+  text-align: center; }
 
 .infoContacto__label--tipografia {
+  text-align: left;
   font-size: 18px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: white; }
 
 /* Error 404 */
 .errorInformacion__titulo--tipografia {
@@ -251,6 +299,10 @@ h5 {
 .body__fondo--color {
   background-color: #fff6e1; }
 
+/* Fondo para contactos */
+.body__fondo--colorEspecial {
+  background-color: #560A04; }
+
 /* Color de nav */
 .nav__fondo--color, .infoContacto__botones--color, .errorInformacion__boton--color {
   background-color: #560A04 !important;
@@ -267,17 +319,28 @@ hr {
   background-color: #560A04; }
 
 /* Color de titulos */
-.bienvenida__titulo--color, .bienvenida__texto--color, .informacion__titulo--color, .informacion__texto--color, .infoArtistas__titulo--color, .infoArtista__titulo--color, .contenido__titulo--color, .infoContacto__titulo--color, .infoContacto__texto--color, .preguntas__titulo--color, .errorInformacion__parrafo--color {
+.bienvenida__titulo--color, .bienvenida__texto--color, .informacion__titulo--color, .informacion__texto--color, .infoArtistas__titulo--color, .infoArtista__titulo--color, .contenido__titulo--color, .preguntas__titulo--color, .errorInformacion__parrafo--color {
   color: black; }
+
+.infoContacto__titulo--color, .infoContacto__texto--color {
+  color: white; }
 
 /* Color de footer */
 .footer__fondo--color {
   background-color: #560A04 !important;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2); }
-  .footer__fondo--color .footer__texto--color {
-    color: white; }
-    .footer__fondo--color .footer__texto--color .footer__copy--color {
-      color: rgba(255, 255, 255, 0.76); }
+
+.footer__titulo1--color {
+  color: rgba(255, 255, 255, 0.76); }
+
+.footer__titulo2--color {
+  color: rgba(255, 255, 255, 0.76); }
+
+.footer__texto--color {
+  color: white; }
+
+.footer__copy--color {
+  color: rgba(255, 255, 255, 0.76); }
 
 .navbar-light .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
@@ -308,6 +371,11 @@ hr {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2); }
 
 /* Color de botones contacto */
+/* Contenedor contacto */
+.infoContacto__fomrulario--color {
+  background-color: #721710a9;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2); }
+
 .infoContacto__botones--color:hover {
   background-color: #8b251e !important; }
 
@@ -327,6 +395,9 @@ body::-webkit-scrollbar-thumb {
 .errorInformacion__boton--color {
   color: white;
   border-radius: 5px; }
+
+.errorInformacion__boton--color:hover {
+  background-color: #8b251e !important; }
 
 /* Ancho del body */
 .background {
@@ -355,8 +426,8 @@ body::-webkit-scrollbar-thumb {
   padding-bottom: 70px;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-top: 60px;
+  margin-bottom: 15px; }
   @media only screen and (min-width: 0px) and (max-width: 400px) {
     .bienvenida__contenedor--boxYFlex {
       display: flex;
@@ -382,6 +453,12 @@ body::-webkit-scrollbar-thumb {
         margin: 12px 4px;
         padding: 4px;
         width: auto; } }
+
+.bienvenida__musica--boxYFlex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px; }
 
 .preguntas__contendor--boxYFlex {
   padding-top: 15px;
@@ -422,10 +499,22 @@ hr {
   margin-bottom: 30px; }
 
 /* Footer texto y logos */
-.footer__texto--boxYFlex {
+.footer__texto--boxYFlex, .footer__titulo1--boxYFlex, .footer__titulo2--boxYFlex {
   margin-left: 20px;
   margin-bottom: 0px;
+  margin-top: 10px; }
+
+.footer__titulo1--boxYFlex {
+  margin-bottom: 10px;
   margin-top: 20px; }
+
+.footer__titulo2--boxYFlex {
+  margin-right: 38px;
+  margin-bottom: 0px;
+  margin-top: 20px; }
+  @media only screen and (min-width: 0px) and (max-width: 960px) {
+    .footer__titulo2--boxYFlex {
+      margin-right: 0px; } }
 
 .footer__copy--boxYFlex {
   padding-bottom: -50px;
@@ -437,7 +526,7 @@ hr {
   height: 100px;
   width: 100px;
   margin-bottom: 25px;
-  margin-left: 30px;
+  margin-left: 28px;
   margin-top: 0px; }
 
 .footer__redes {
@@ -500,10 +589,10 @@ hr {
     height: 525px; }
     @media only screen and (min-width: 401px) and (max-width: 960px) {
       .infoArtistas__contenedor--boxYFlex .infoArtista__card--boxYFlex {
-        height: 420px; } }
+        height: 480px; } }
     @media only screen and (min-width: 992px) and (max-width: 1100px) {
       .infoArtistas__contenedor--boxYFlex .infoArtista__card--boxYFlex {
-        height: 776px; } }
+        height: 790px; } }
     @media only screen and (min-width: 1101px) and (max-width: 1300px) {
       .infoArtistas__contenedor--boxYFlex .infoArtista__card--boxYFlex {
         height: 680px; } }
@@ -518,47 +607,69 @@ hr {
   padding: 2px; }
 
 .contenido__titulo--boxYFlex {
-  margin: 20px 2px;
-  padding: 5px;
-  padding-left: 21px; }
-
-.infoContacto__contenedor--boxYFlex {
-  margin-bottom: 5px;
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 2px;
-  padding: 5px; }
-
-.infoContacto__contenedor2--boxYFlex {
-  margin-bottom: 0px;
-  margin-top: 6px;
-  margin-left: 10px;
-  margin-right: 2px;
+  margin: 20px 5px;
   padding: 5px; }
 
 /* Concatctos input, boton, form y mapa */
+.contacto__contendor--boxYFlex {
+  width: 800px; }
+  @media only screen and (min-width: 0px) and (max-width: 400px) {
+    .contacto__contendor--boxYFlex {
+      width: 300px; } }
+  @media only screen and (min-width: 401px) and (max-width: 760px) {
+    .contacto__contendor--boxYFlex {
+      width: 320px; } }
+  @media only screen and (min-width: 761px) and (max-width: 960px) {
+    .contacto__contendor--boxYFlex {
+      width: 450px; } }
+  @media only screen and (min-width: 961px) and (max-width: 1100px) {
+    .contacto__contendor--boxYFlex {
+      width: 730px; } }
+
+.infoContacto__contenedor--boxYFlex {
+  margin-bottom: 30px;
+  margin-top: 40px;
+  padding: 5px; }
+
+.infoContacto__fomrulario--boxYFlex {
+  margin-bottom: 20px; }
+
 .infoContacto__input--boxYFlex {
-  border: 2px solid #560A04;
-  border-radius: 5px; }
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 740px; }
+  @media only screen and (min-width: 0px) and (max-width: 400px) {
+    .infoContacto__input--boxYFlex {
+      width: 250px; } }
+  @media only screen and (min-width: 401px) and (max-width: 760px) {
+    .infoContacto__input--boxYFlex {
+      width: 270px; } }
+  @media only screen and (min-width: 761px) and (max-width: 961px) {
+    .infoContacto__input--boxYFlex {
+      width: 380px; } }
+  @media only screen and (min-width: 961px) and (max-width: 1100px) {
+    .infoContacto__input--boxYFlex {
+      width: 630px; } }
 
 .infoContacto__boton1--boxyFlex, .infoContacto__boton2--boxyFlex {
   margin: 10px; }
 
 .infoContacto__form-boxYFlex, .infoContacto__texto--boxYFlex {
-  margin-right: 50px !important; }
+  margin: 20px; }
 
-.infoContacto__botones--boxYFlex {
-  margin: 10px; }
-  @media only screen and (min-width: 401px) and (max-width: 960px) {
-    .infoContacto__botones--boxYFlex {
-      margin-left: 50px;
-      margin-right: 50px; } }
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .infoContacto__botones--boxYFlex {
+    margin-left: 50px;
+    margin-right: 50px; } }
+
+.infoContacto__mapaContenedor-boxYFlex {
+  display: flex;
+  justify-content: center; }
 
 .infoContacto__mapa-boxYFlex {
-  margin-left: 90px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 470px; }
+  align-items: center;
+  width: 480px;
+  margin: 20px; }
   @media only screen and (min-width: 0px) and (max-width: 400px) {
     .infoContacto__mapa-boxYFlex {
       width: 230px;
