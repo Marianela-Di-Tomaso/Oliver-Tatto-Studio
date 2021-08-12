@@ -23,7 +23,7 @@ hr {
   background-color: #560A04; }
 
 /* Color de titulos */
-.bienvenida__titulo--color, .bienvenida__texto--color, .informacion__titulo--color, .informacion__texto--color, .infoArtistas__titulo--color, .infoArtista__titulo--color, .contenido__titulo--color, .preguntas__titulo--color, .errorInformacion__parrafo--color {
+.bienvenida__titulo--color, .bienvenida__texto--color, .informacion__titulo--color, .informacion__texto--color, .infoArtistas__titulo--color, .infoArtista__titulo--color, .galeria__titulo--color, .preguntas__titulo--color, .errorInformacion__parrafo--color {
   color: black; }
 
 .infoContacto__titulo--color, .infoContacto__texto--color {
@@ -205,19 +205,19 @@ h5 {
   list-style-type: none; }
 
 /* Informacion de estudio */
-.informacion__titulo--tipografia, .infoArtistas__titulo--tipografia, .contenido__titulo--tipografia, .infoContacto__titulo--tipografia {
+.informacion__titulo--tipografia, .infoArtistas__titulo--tipografia, .galeria__titulo--tipografia, .infoContacto__titulo--tipografia {
   text-align: left;
   font-size: 30px;
   letter-spacing: 3px; }
   @media only screen and (min-width: 0px) and (max-width: 400px) {
-    .informacion__titulo--tipografia, .infoArtistas__titulo--tipografia, .contenido__titulo--tipografia, .infoContacto__titulo--tipografia {
+    .informacion__titulo--tipografia, .infoArtistas__titulo--tipografia, .galeria__titulo--tipografia, .infoContacto__titulo--tipografia {
       font-size: 20px;
       letter-spacing: 2px;
       margin: 10px 2px;
       padding: 3px;
       text-align: center; } }
   @media only screen and (min-width: 401px) and (max-width: 960px) {
-    .informacion__titulo--tipografia, .infoArtistas__titulo--tipografia, .contenido__titulo--tipografia, .infoContacto__titulo--tipografia {
+    .informacion__titulo--tipografia, .infoArtistas__titulo--tipografia, .galeria__titulo--tipografia, .infoContacto__titulo--tipografia {
       text-align: center; } }
 
 /* Informacion de artistas */
@@ -230,7 +230,6 @@ h5 {
       font-size: 18px;
       line-height: 25px; } }
 
-/* Informacion de artistas */
 .infoArtista__titulo--tipografia {
   font-size: 23px;
   letter-spacing: 2px; }
@@ -245,6 +244,7 @@ h5 {
   font-size: 16px;
   font-weight: 700; }
 
+/* Galeria */
 /* Texto contacto */
 .infoContacto__titulo--tipografia {
   text-align: center; }
@@ -319,7 +319,7 @@ hr {
   background-color: #560A04; }
 
 /* Color de titulos */
-.bienvenida__titulo--color, .bienvenida__texto--color, .informacion__titulo--color, .informacion__texto--color, .infoArtistas__titulo--color, .infoArtista__titulo--color, .contenido__titulo--color, .preguntas__titulo--color, .errorInformacion__parrafo--color {
+.bienvenida__titulo--color, .bienvenida__texto--color, .informacion__titulo--color, .informacion__texto--color, .infoArtistas__titulo--color, .infoArtista__titulo--color, .galeria__titulo--color, .preguntas__titulo--color, .errorInformacion__parrafo--color {
   color: black; }
 
 .infoContacto__titulo--color, .infoContacto__texto--color {
@@ -606,8 +606,8 @@ hr {
   margin: 2px;
   padding: 2px; }
 
-.contenido__titulo--boxYFlex {
-  margin: 20px 5px;
+.galeria__titulo--boxYFlex {
+  margin: 20px 15px;
   padding: 5px; }
 
 /* Concatctos input, boton, form y mapa */

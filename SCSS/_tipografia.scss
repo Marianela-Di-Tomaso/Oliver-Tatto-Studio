@@ -134,10 +134,6 @@ $estilos :(
     @extend .informacion__titulo--tipografia;
 }
 
-.contenido__titulo--tipografia {
-    @extend .informacion__titulo--tipografia;
-}
-
 .informacion__texto--tipografia{
     @include font (21px,31px);
     text-align: map-get($estilos, izq);
@@ -145,7 +141,7 @@ $estilos :(
         @include font (18px,25px);
     }
 }
- /* Informacion de artistas */
+
 .infoArtista__titulo--tipografia{
     font-size: 23px;
     letter-spacing: 2px;
@@ -162,6 +158,12 @@ $estilos :(
     font-family: $fontFamilyRoboto;
     font-size: 16px;
     font-weight: 700;
+}
+
+/* Galeria */
+.galeria__titulo--tipografia {
+    @extend .informacion__titulo--tipografia;
+    
 }
 
 /* Texto contacto */
